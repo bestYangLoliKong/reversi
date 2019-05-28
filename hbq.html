@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #qp {
+            border: 1px solid #777;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            background: #293;
+            margin: auto;
+            margin-top: 30px;
+        }
+        #qp div {
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+        }
+
+        #result,#buttons,#help,#detail{
+            margin-top:30px;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <div id="qp" onclick="rule()">
+
+    </div>
+    <div id="buttons">
+        <button id="restart" onclick="restart()">重新开始</button>
+        <button id="hq" onclick="back()">悔棋</button>
+    </div>
+    <div id="result">
+        <p id="w"></p>
+        <p id="b"></p>
+        <p id="s_f"></p>
+    </div>
+    <div id="help">
+        <a href="https://baike.baidu.com/item/黑白棋/80689">黑白棋简介及规则</a>
+    </div>
+    <p id="detail">作者：阳光 web1812</p>
+    <script src="hbq.js"></script>
+</body>
+
+</html>
